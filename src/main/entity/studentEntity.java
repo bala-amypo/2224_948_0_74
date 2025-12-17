@@ -17,12 +17,15 @@ public class studentEntity{
   public void setId(Long id){
     this.id = id;
   }
-  
+  public Long getId(){
+    return id;
+  } 
+
   public studentEntity(){
 
   }
 
-  public studenrEntity(Long id,String name,String email)
+  public studentEntity(Long id,String name,String email)
   {
     this.id = id;
     this.name = name;
