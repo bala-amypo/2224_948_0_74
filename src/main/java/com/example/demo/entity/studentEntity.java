@@ -1,12 +1,12 @@
-package com.example.demo.entit
+package com.example.demo.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 
 @Entity
 public class studentEntity {
-  @id
-  @GeneratedValue(startegy=GenerationType.IDENTITY)
+  @Id
+  @GeneratedValue(strategy=GenerationType.IDENTITY)
   private Long id;
 
   @Email(message = "Email Format is not valid")
