@@ -1,9 +1,10 @@
 package com.example.demo.entit
 
-import jakarta.presistence.*;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
+
 @Entity
-public class studentEntity{
+public class studentEntity {
   @id
   @GeneratedValue(startegy=GenerationType.IDENTITY)
   private Long id;
